@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matrix Printing with Color and Size Options</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Matrix Printing with Color and Size Options</h2>
+    <form action="matrix.php" method="post">
+        <label for="num_colors">Number of Colors:</label>
+        <input type="number" id="num_colors" name="num_colors" required><br>
+
+        <label for="num_sizes">Number of Sizes:</label>
+        <input type="number" id="num_sizes" name="num_sizes" required><br>
+
+        <label for="color_labels">Color Labels:</label>
+        <input type="text" id="color_labels" name="color_labels" required><br>
+
+        <label for="size_labels">Size Labels:</label>
+        <input type="text" id="size_labels" name="size_labels" required><br>
+
+        <input type="submit" value="Generate Matrix">
+    </form>
+</body>
+
+</html>
